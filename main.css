@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+body {
+  background-image: url(/imgs/pexels-jessica-lewis-creative-583848.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 1201px;
+  z-index: 1;
+}
+.center {
+    margin-left: 42%;
+    display: block;
+  
+}
+
+.text-center
+{
+  text-align: center;
+  display: block;
+}
+
+/* PAGES */
+#home,#about-me
+{
+  height: 1201px;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+
+/* HOME */
+#home {
+  
+}
+#home::after { /* BLACK COVER */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1201px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+#home h1 {
+  display: block;
+  width: fit-content;
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-top: 400px;
+}
+#home h2 {
+  display: inline-block;
+  padding: 10px 30px;
+  color: cornflowerblue;
+  background-color: transparent;
+  border: 2px solid cornflowerblue;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin-top: 30px;
+  transition: 0.5s ease background-color;
+  transition: 0.5s ease color;
+}
+#home h2:hover {
+  color: whitesmoke;
+  background-color: cornflowerblue;
+}
+
+/* ABOUT ME */
+#about-me 
+{
+  background-color:bisque;
+  background-image: url(/imgs/about-me.jpg);
+  background-repeat: no-repeat;
+  background-size: 50% 1201px;
+  z-index: 1;
+}
+
+
+#home
+{
+  grid-area: top;
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-areas:"top top"
+  ". .";
+  grid-gap: 10px;
+  padding: 10px;
+  height: 1200px;
+}
+#about-me-text
+{
+  
+  margin-top: 100px;
+
+}
