@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="main.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bodyimg">
-    <div id="page">
-      <div id="home">
-        <h1 class="center">
-          Hej<br />
-          Mit navn er<br />
-          Mathias Schaltz Hansen
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1 class="home-title">
+            Hej<br />
+            Mit navn er<br />
+            Mathias Schaltz Hansen
         </h1>
-        <a href="/aboutme.html"><h2 class="center">portfolio</h2></a>
-    </div>
+        <a href="/aboutme.html">
+            <button>portfolio</button>
+        </a>
+    </section>
 
-    <div id="min-kode">
+    <section id="about-me">
+        <div class="grid-container">
+            <img class="about-me-img" src="/imgs/about-me.jpg">
+            <div class="about-me-text">
+                <h1 class="Page-Title">Om mig</h1>
+                <p class="standard-text">
+                    Mit navn er Matihas Schaltz Hansen. En paasioneret ung fyr
+                    som nemt for blod på tanden efter ny læring.
+                    <br><br>
+                    Jeg brander for
+                    at udvilke mine kompatancer inde for programmering samt få
+                    en breder forståelse inde for faget.
+                    <br><br>
+                    Lige nu arbejder jeg med HTML og CSS, hvor senere
+                    vil jeg også gerne arbejde med C# samt Python.
+                </p>
 
-      <div class="slideshow-main"> 
+            </div>
+        </div>
+    </section>
 
-      <div class="myslide-fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="imgs/er-tal-lige-eller-ulige.png" style="width: 100%"> 
-          <div class="text">titlen på projektet</div>
-      </div>
+    <section id="contact">
+        <ul class="contact-list">
+            
+            <li>
+                <a class="gmail" href="https://mail.google.com/mail/?view=cm&fs=1&to=seekerbrutus@gmail.com&body=Contacted Through Website" target="_blank">
+                <img class="gmail-img" src="imgs/mail-99218_960_720.png">
+                <h3>Kontak mig på min mail</h3>
+                </a>  
+            </li>
+            <li>
+                <a class="github" href="https://github.com/SaltedFishy03" target="_blank">
+                <img class="github-img" src="imgs/github-6980894__340-removebg-preview (2).png">
+                <h3>check min profil ud på Github</h3>
+                </a>
+            </li>
+            <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/mathias-hansen-564172249/" target="_blank">
+                <img class="linkedin-img" src="imgs/LinkedIn_logo_initials-removebg-preview.png">
+                <h3>ckeck min profil ud inde på LinkedIn</h3>
+                </a>
+            </li>
+        </ul>
 
-      <div class="mySlides-fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="imgs/concalc.png" style="width:100%">
-          <div class="text">titlen på projektet</div>
-      </div>
-
-      <div class="mySlides-fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="imgs/difference-taeller.png"style="width:100%">
-          <div class="text">titlen på projektet</div>
-      </div>
-
-        <a class="prev" onclick="plusSlides(-1)"></a>
-        <a class="next" onclick="plusSlides(1)"></a>
-      </div> 
-      <br>  
       
-      <div style="text-align:center">
-      <span class="dot" onclick="slide(1)"></span> 
-      <span class="dot" onclick="slide(2)"></span> 
-      <span class="dot" onclick="slide(3)"></span> 
-      </div>
-    </div>
+    </section>
 
-<div id="about-me">
+    <footer class="footer">
 
-  <div id="about-me-text">
-    <div class="grid-container">
-      <div class="left" id="Om-mig-img"></div>
-      <div class="right" id="Om-mig-text">
-      <div class="overtekst"><h1>Om mig</h1></div>
-      <br>
-      <p> Mit navn er Matihas Schaltz Hansen. En paasioneret ung fyr <br> som nemt for blod på tanden efter ny læring. Jeg brander for <br> at udvilke mine kompatancer inde for programmering samt få <br>en breder forståelse inde for "faget". Lige nu arbejder jeg med <br>"HTML" brog "CSS" senere hen vil jeg også gerne arbejde med <br> "C#" samt "Python".</p></div> </div>
-                            
-      </div>
-      </div>
-    </div>
-  </div>
-
+    </footer>
 </body>
+
 </html>

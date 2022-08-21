@@ -12,42 +12,33 @@ html {
 a {
   text-decoration: none;
 }
-.container {
-  min-height: 100vh;
-  width: 100%;
-}
 body {
   background-image: url(/imgs/pexels-jessica-lewis-creative-583848.jpg);
   background-repeat: no-repeat;
   background-size: 100% 1000px;
   z-index: 1;
 }
-.center {
-    margin-left: 42%;
-    display: block;
-  
-}
 
-.text-center
+/*.grid-container
 {
-  text-align: center;
-  display: block;
-}
+  display: grid;
+  grid-template-areas:
+  "home home"
+  "left right";
+  grid-gap: 10px;
+  padding: 10px;
+  height: 1000px;
+}*/
 
 /* PAGES */
-#home,#about-me,#min-kode
+#home,#about-me,#contact
 {
-  height: 1000px;
+  min-height: 1000px;
   overflow: hidden;
-  border: 2px solid black;
 }
 
 
 /* HOME */
-#home
-{
-  grid-area: top;
-}
 
 #home::after { /* BLACK COVER */
   content: "";
@@ -62,16 +53,17 @@ body {
 }
 
 /*min overskrift på home siden*/
-#home h1 {
+#home .home-title {
+  margin-left: 42%;
   display: block;
-  width: fit-content;
   font-size: 2rem;
   color: whitesmoke;
-  margin-top: 400px;
+  margin-top: 18%;
 }
 
 /*knappen på home siden*/
-#home h2 {
+#home button {
+  margin-left: 42%;
   display: inline-block;
   padding: 10px 30px;
   color: cornflowerblue;
@@ -85,92 +77,10 @@ body {
   transition: 0.5s ease color;
 }
 
-#home h2:hover {
+#home button:hover {
   color: whitesmoke;
   background-color: cornflowerblue;
 }
-
-/*min-kode*/
-
-
-/*slideshow container*/
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* skjul billederne by default */
-.slideshow-main
-{
-  display: none;
-}
-
-/* fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-/* frem og tilbage knap mellem billeder */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  color: white;
-  padding: 16px;
-  border-radius: 0 3px 3px 0;
-  margin-top: -22px;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-/* hvor næste knappen skal være */
-.next
-{
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* hover effeckt */
-.prev:hover, .next:hover
-{
-  background-color: black;
-}
-
-/* titlen */
-.text 
-{
-  color: white;
-  font-size: 15px;
-  position: absolute;
-  padding: 8px 12px;
-  width: 100%;
-  bottom: 8px;
-  text-align: center;
-}
-
-/* side numre */
-.numbertext
-{
-  color: white;
-  font-size: 12px;
-  position: absolute;
-  top: 0;
-  padding: 8px 12px;
-}
-
-
-
 
 
 
@@ -179,56 +89,144 @@ body {
 #about-me 
 {
   background-color:rgba(35, 29, 29, 0.877);
-  background-image: url(/imgs/about-me.jpg);
-  background-repeat: no-repeat;
-  background-size: 50% 1000px;
-  z-index: 1;
-  font-size: 130%;
 }
-
-
-
-.left
+.about-me-img
 {
-  text-align: left;
-  
- 
+  float: left;
+  max-width: 50%;
 }
-
-.right
+.about-me-text
 {
-  text-align: left;
-  line-height: 2.5;
-  color:whitesmoke;
-  
-}
-
-.center-bodytext
-{
+  max-width: 50%;
+  margin-left: 50%;
   text-align: center;
 }
 
-.overtekst
+/* Text Styles */
+.Page-Title
 {
   color:cornflowerblue;
+  height: 300px;
+  padding-top: 220px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
 }
-.grid-container
+.standard-text
 {
-  display: grid;
-  grid-template-areas:"top top"
-  ". .";
-  grid-gap: 10px;
-  padding: 10px;
-  height: 1000px;
+  display:inline-flex;
+  color: white;
+  max-width: 50%;
+  font-size: 1.4em;
+  text-align: center;  
+}
+
+
+/* kontakt mig */
+#contact
+{
+  background-color:rgba(35, 29, 29, 0.877);
+}
+.contact-list
+{
+  border: 2px solid black;
+}
+
+.gmail
+{
+  margin-top: 10%;
+  border: 2px solid aqua;
+  padding: 20px 60px;
+  margin-left: 42%;
+  display: inline-block;
+  color: cornflowerblue;
+  background-color: rgba(13, 13, 13, 0.586);
   
 }
 
-#about-me-text
+.gmail-img
 {
-  margin-top: 160px;
-  margin-left: 1000px;
+  margin-right: 20px;
+  border: 2px solid greenyellow;
+  width: 120px;
 }
 
+.gmail h3
+{
+  margin-top: 12%;
+  border: 2px solid red;
+  float: right;
+  
+}
 
+.github
+{
+  margin-top: 5%;
+  padding: 20px 40px;
+  margin-left: 42%;
+  display: inline-block;
+  color: cornflowerblue;
+  background-color:rgba(13, 13, 13, 0.586);
+}
 
+.github-img
+{
+  width: 150px;
+}
 
+.linkedin
+{
+  margin-top: 5%;
+  padding: 20px 40px;
+  margin-left: 42%;
+  display: inline-block;
+  color: cornflowerblue;
+  background-color:rgba(13, 13, 13, 0.586);
+}
+
+.linkedin-img
+{
+  width: 150px;
+}
+.contact-box
+{
+  border: 2px solid aqua;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 35%;
+  max-width: 500px;
+  height: 160px;
+  justify-content: center;
+
+}
+.contact-box img
+{
+  border: 2px solid brown;
+  width: 160px;
+  float: left;
+}
+.contact-box p
+{
+  padding-top: 13%;
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: center;
+
+}
+
+.contact-text
+{
+  border: 2px solid white;
+  color: white;
+  font-size: 1.3em;
+}
+
+.contact-text
+{
+  margin-left: 100px;
+}
+.footer
+{
+  height: 200px;
+  background-color: rgb(35, 29, 29);
+}
