@@ -6,6 +6,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 20px;
   font-family: Montserrat, sans-serif;
 }
@@ -103,7 +104,7 @@ body {
 }
 
 /* Text Styles */
-.Page-Title
+.about-me-Title
 {
   color:cornflowerblue;
   height: 300px;
@@ -115,11 +116,12 @@ body {
 .standard-text
 {
   display:inline-flex;
-  color: white;
+  color: whitesmoke;
   max-width: 50%;
   font-size: 1.4em;
   text-align: center;  
 }
+
 
 
 /* kontakt mig */
@@ -127,103 +129,71 @@ body {
 {
   background-color:rgba(35, 29, 29, 0.877);
 }
-.contact-list
-{
-  border: 2px solid black;
-}
 
-.gmail
+.contact-title
 {
-  margin-top: 10%;
-  border: 2px solid aqua;
-  padding: 20px 60px;
-  margin-left: 42%;
-  display: inline-block;
+  margin-left: 45%;
+  margin-top: 5%;
+  font-size: 60px;
   color: cornflowerblue;
-  background-color: rgba(13, 13, 13, 0.586);
-  
 }
 
-.gmail-img
+.contact-box
 {
+  width: 600px;
+  border-radius: 25px;
+  margin-top: 5%;
+  padding: 20px 60px;
+  margin-left: 34%;
+  display: inline-block;
+  transition: .2s;
+  color: whitesmoke;
+  background-color: rgba(13, 13, 13, 0.586);
+}
+
+.contact-text
+{
+  clear: right;
+  margin-top: 5%;
+  font-size: 30px;
+
+}
+
+.contact-img
+{
+  float: left;
+  text-align: left;
   margin-right: 20px;
-  border: 2px solid greenyellow;
   width: 120px;
 }
 
-.gmail h3
+.contact-box:hover
 {
-  margin-top: 12%;
-  border: 2px solid red;
-  float: right;
-  
+  transform: scale(1.2); 
 }
 
-.github
+.navigationbar
 {
-  margin-top: 5%;
-  padding: 20px 40px;
-  margin-left: 42%;
-  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  background-color:transparent;
+  top: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.navigationbar a
+{
   color: cornflowerblue;
-  background-color:rgba(13, 13, 13, 0.586);
+  text-align: center;
+  padding: 15px 15px;
+  font-size: 25px;
 }
 
-.github-img
+.navigationbar a:hover
 {
-  width: 150px;
-}
-
-.linkedin
-{
-  margin-top: 5%;
-  padding: 20px 40px;
-  margin-left: 42%;
-  display: inline-block;
-  color: cornflowerblue;
-  background-color:rgba(13, 13, 13, 0.586);
-}
-
-.linkedin-img
-{
-  width: 150px;
-}
-.contact-box
-{
-  border: 2px solid aqua;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 35%;
-  max-width: 500px;
-  height: 160px;
-  justify-content: center;
-
-}
-.contact-box img
-{
-  border: 2px solid brown;
-  width: 160px;
-  float: left;
-}
-.contact-box p
-{
-  padding-top: 13%;
-  border: 2px solid yellow;
-  display: flex;
-  justify-content: center;
-
-}
-
-.contact-text
-{
-  border: 2px solid white;
-  color: white;
-  font-size: 1.3em;
-}
-
-.contact-text
-{
-  margin-left: 100px;
+  text-decoration: underline;
 }
 .footer
 {
