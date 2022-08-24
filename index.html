@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="main.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
 </head>
 
 <body>
@@ -40,40 +41,33 @@
 
     <section id="slideshow">
         <div class="slider-wrapper">
-                <div class="slider">
-                    <div>
+            <div class="slider">
 
-                        <a  
-                        href="https://github.com/SaltedFishy03/      ConCalc">
-                        <img id="slide-1" src="imgs/concalc.png">
-                    </a>
-                    </div>
-                    
-                    <div>
-
-                        <a 
-                        href="https://github.com/SaltedFishy03/Difference-mellem-2-tal.git">
-                        <img id="slide-2" src="imgs/difference-taeller.png">
-                    </a>
-                </div>
-
-                <div>
+                <a href="https://github.com/SaltedFishy03/      ConCalc">
+                    <img id="slide-1" src="imgs/concalc.png">
+                </a>
 
 
-                    <a 
-                    href="https://github.com/SaltedFishy03/lige-eller-ulige-tal-.git">
+
+                <a href="https://github.com/SaltedFishy03/Difference-mellem-2-tal.git">
+                    <img id="slide-2" src="imgs/difference-taeller.png">
+                </a>
+
+
+
+                <a href="https://github.com/SaltedFishy03/lige-eller-ulige-tal-.git">
                     <img id="slide-3" src="imgs/er-tal-lige-eller-ulige.png">
                 </a>
-                
             </div>
-                </div>
+        </div>
 
-                <div class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                </div>
-            
+
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+        </div>
+
         </div>
     </section>
     <section id="about-me">
@@ -130,6 +124,14 @@
     <footer class="footer">
 
     </footer>
+    <script>
+        new fullpage('#fullpage', {
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true
+        });
+    </script>
+    <script type="text/javascript" src="fullpage.js"></script>
 </body>
 
 </html>

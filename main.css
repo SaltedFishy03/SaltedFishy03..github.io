@@ -55,7 +55,7 @@ body {
 
 /*min overskrift på home siden*/
 #home .home-title {
-  margin-left: 42%;
+  margin-left: 40%;
   display: block;
   font-size: 2rem;
   color: whitesmoke;
@@ -64,7 +64,7 @@ body {
 
 /*knappen på home siden*/
 #home button {
-  margin-left: 42%;
+  margin-left: 40%;
   display: inline-block;
   padding: 10px 30px;
   color: cornflowerblue;
@@ -93,6 +93,32 @@ body {
 
 }
 
+  .sliderwrapper
+  {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .slider 
+  {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x:auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    border-radius: 4px;
+  } 
+  
+  .slider img
+  {
+  float: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  }
+
+
+/*
 .slider-wrapper
 {
   position: relative;
@@ -145,7 +171,7 @@ body {
   transition: ease 250ms;
 }
 
-
+*/
 
 
 /* ABOUT ME */
