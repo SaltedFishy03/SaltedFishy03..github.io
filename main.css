@@ -86,93 +86,6 @@ body {
 
 
 
-#slideshow
-{
-  padding: 32px;
-  background-color:rgba(35, 29, 29, 0.877);
-
-}
-
-  .sliderwrapper
-  {
-    position: relative;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .slider 
-  {
-    display: flex;
-    aspect-ratio: 16 / 9;
-    overflow-x:auto;
-    scroll-snap-type: mandatory;
-    scroll-behavior: smooth;
-    border-radius: 4px;
-  } 
-  
-  .slider img
-  {
-  float: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-  }
-
-
-/*
-.slider-wrapper
-{
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.slider-wrapper img
-{
-  width: 52%;
-}
-
-
-.slider
-{
-  
-  display: flex;
-  aspect-ratio: 16 / 9;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  border-radius: 4px;
-}
-
-.slider img
-{
-  float: 1 0 100%;
-  scroll-snap-align: start;
-  object-fit: cover;
-}
-
-.slider-nav
-{
-  display: flex;
-  column-gap: 16px;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 1;
-}
-
-.slider-nav a
-{
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: whitesmoke;
-  opacity: 0.75;
-  transition: ease 250ms;
-}
-
-*/
-
 
 /* ABOUT ME */
 #about-me 
@@ -287,4 +200,26 @@ body {
 {
   height: 200px;
   background-color: rgb(35, 29, 29);
+}
+
+/* Slideshow */
+#slideshow
+{
+
+}
+#slideshow div h1
+{
+
+}
+#slideshow div h2
+{
+
+}
+
+#slideshow div a img
+{
+  display: block;
+  margin-top: 20%;
+  margin-right: auto;
+  margin-left: auto;
 }
