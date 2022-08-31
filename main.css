@@ -1,35 +1,18 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-
+  
 }
 
 html {
-  scroll-behavior: smooth;
+ 
   font-size: 20px;
   font-family: Montserrat, sans-serif;
 }
 a {
   text-decoration: none;
 }
-body {
-  background-image: url(/imgs/pexels-jessica-lewis-creative-583848.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 1000px;
-  z-index: 1;
-}
 
-/*.grid-container
-{
-  display: grid;
-  grid-template-areas:
-  "home home"
-  "left right";
-  grid-gap: 10px;
-  padding: 10px;
-  height: 1000px;
-}*/
 
 /* PAGES */
 #home,#slideshow,#about-me,#contact
@@ -40,6 +23,14 @@ body {
 
 
 /* HOME */
+
+#home
+{
+  background-image: url(/imgs/pexels-jessica-lewis-creative-583848.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  z-index: 1;
+}
 
 #home::after { /* BLACK COVER */
   content: "";
@@ -55,8 +46,10 @@ body {
 
 /*min overskrift på home siden*/
 #home .home-title {
-  margin-left: 40%;
+  border: 2px solid aqua;
   display: block;
+  text-align: center;
+  
   font-size: 2rem;
   color: whitesmoke;
   margin-top: 18%;
@@ -65,6 +58,7 @@ body {
 /*knappen på home siden*/
 #home button {
   margin-left: 40%;
+  
   display: inline-block;
   padding: 10px 30px;
   color: cornflowerblue;
@@ -78,7 +72,6 @@ body {
   transition: 0.5s ease color;
 }
 
-
 #home button:hover {
   color: whitesmoke;
   background-color: cornflowerblue;
@@ -86,6 +79,56 @@ body {
 
 
 
+
+.navigationbar
+{
+  padding: 10px;
+  width: 100%;
+  background-color:transparent;
+  top: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  scroll-behavior: smooth;
+}
+
+.navigationbar a
+{
+  color: cornflowerblue;
+  text-align: center;
+  padding: 15px 15px;
+  font-size: 25px;
+}
+
+.navigationbar a:hover
+{
+  text-decoration: underline;
+}
+
+
+
+/*projekt slideshow
+#slideshow
+{
+
+}
+#slideshow div h1
+{
+
+}
+#slideshow div h2
+{
+
+}
+
+#slideshow div a img
+{
+  display: block;
+  margin-top: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+*/
 
 /* ABOUT ME */
 #about-me 
@@ -173,53 +216,13 @@ body {
   transform: scale(1.2); 
 }
 
-.navigationbar
-{
-  padding: 10px;
-  width: 100%;
-  background-color:transparent;
-  top: 0;
-  text-align: center;
-  position: fixed;
-  z-index: 1;
-}
 
-.navigationbar a
-{
-  color: cornflowerblue;
-  text-align: center;
-  padding: 15px 15px;
-  font-size: 25px;
-}
 
-.navigationbar a:hover
-{
-  text-decoration: underline;
-}
 .footer
 {
   height: 200px;
   background-color: rgb(35, 29, 29);
 }
 
-/* Slideshow */
-#slideshow
-{
 
-}
-#slideshow div h1
-{
 
-}
-#slideshow div h2
-{
-
-}
-
-#slideshow div a img
-{
-  display: block;
-  margin-top: 20%;
-  margin-right: auto;
-  margin-left: auto;
-}
