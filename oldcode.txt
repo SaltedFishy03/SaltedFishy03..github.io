@@ -1,0 +1,340 @@
+<body>
+
+    <div class="navigationbar">
+        <a href="#home" style="font-weight:bold">Hjem</a>
+        <a href="#slideshow" style="font-weight:bold">Projekter</a>
+        <a href="#about-me" style="font-weight:bold">Om mig</a>
+        <a href="#contact" style="font-weight:bold">Kontakt mig</a>
+    </div>b
+
+
+
+        <section id="home">
+            <div class="home-text-holder">
+                <h1 class="home-title">
+                    Hej<br />
+                    Mit navn er<br />
+                    Mathias Schaltz Hansen
+                </h1>
+                <a href="/aboutme.html">
+                    <button>portfolio</button>
+                </a>
+            </div> 
+        </section>
+
+
+    
+        <section id="about-me">
+            <div class="grid-container">
+                <img class="about-me-img" src="/imgs/about-me.jpg">
+                <div class="about-me-text">
+                    <h1 class="about-me-Title">Om mig</h1>
+                    <p class="standard-text">
+                        Mit navn er Matihas Schaltz Hansen. En paasioneret ung fyr
+                        som nemt for blod på tanden efter ny læring.
+                        <br><br>
+                        Jeg brander for
+                        at udvilke mine kompatancer inde for programmering samt få
+                        en breder forståelse inde for faget.
+                        <br><br>
+                        Lige nu arbejder jeg med HTML og CSS, hvor senere
+                        vil jeg også gerne arbejde med C# samt Python.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <ul class="contact-list">
+                <h1 class="contact-title">Kontakt</h1>
+                <li>
+                    <a class="contact-box"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=seekerbrutus@gmail.com&body=Contacted Through Website"
+                        target="_blank">
+                        <img class="contact-img" src="imgs/mail-99218_960_720.png">
+                        <p class="contact-text">Du kan kontakte mig på min mail</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact-box" href="https://github.com/SaltedFishy03" target="_blank">
+                        <img class="contact-img" src="imgs/github-6980894__340-removebg-preview (2).png">
+                        <p class="contact-text">Check min profil ud på Github</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="contact-box" href="https://www.linkedin.com/in/mathias-hansen-564172249/" target="_blank">
+                        <img class="contact-img" src="imgs/LinkedIn_logo_initials-removebg-preview.png">
+                        <p class="contact-text">Se mere om mig på LinkedIn</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+
+        </footer>
+        <script type="text/javascript" src="fullpage.min.js"></script>
+
+        <script type="text/javascript">
+            var myFullpage = new fullpage('#fullpage', {});
+
+        </script>
+
+</body>
+
+</html>
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+
+html {
+ 
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* PAGES */
+#home,#slideshow,#about-me,#contact
+{
+  min-height: 1000px;
+}
+
+
+/* HOME */
+
+#home
+{
+  border: 2px solid aqua;
+  display: block;
+  background-image: url(/imgs/pexels-jessica-lewis-creative-583848.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 1000px;
+  overflow: hidden;
+  z-index: 1;
+  max-width: 100%;
+}
+
+#home::after { /* BLACK COVER */
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 1000px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.home-text-holder
+{
+  border: 2px solid aqua;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  max-width: 490px;
+  margin-top: 400px;  
+}
+
+/*min overskrift på home siden*/
+.home-title {
+  border: 2px solid aqua;
+  display: block;
+  font-size: 2rem;
+  color: whitesmoke;
+
+}
+
+/*knappen på home siden*/
+#home button {
+  min-width: 490px;
+  display: block;
+  padding: 10px 30px;
+  color: cornflowerblue;
+  background-color: transparent;
+  border: 2px solid cornflowerblue;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  margin-top: 30px;
+  transition: 0.5s ease background-color;
+  transition: 0.5s ease color;
+}
+
+#home button:hover {
+  color: whitesmoke;
+  background-color: cornflowerblue;
+}
+
+
+
+/* NAVIGATIONBAR */
+.navigationbar
+{
+  padding: 10px;
+  width: 100%;
+  background-color:transparent;
+  top: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  scroll-behavior: smooth;
+}
+
+.navigationbar a
+{
+  color: cornflowerblue;
+  text-align: center;
+  padding: 15px 15px;
+  font-size: 25px;
+}
+
+.navigationbar a:hover
+{
+  text-decoration: underline;
+}
+
+
+
+/*projekt slideshow
+#slideshow
+{
+
+}
+#slideshow div h1
+{
+
+}
+#slideshow div h2
+{
+
+}
+
+#slideshow div a img
+{
+  display: block;
+  margin-top: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+*/
+
+/* ABOUT ME */
+#about-me 
+{
+  background-color:rgba(35, 29, 29, 0.877);
+}
+.about-me-img
+{
+  float: left;
+  background-size: 800px;
+  max-width: 50%;
+
+
+}
+.about-me-text
+{
+  max-width: 50%;
+  margin-left: 50%;
+  text-align: center;
+}
+
+/* Text Styles */
+.about-me-Title
+{
+  color:cornflowerblue;
+  height: 300px;
+  padding-top: 220px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+.standard-text
+{
+  display:inline-flex;
+  color: whitesmoke;
+  max-width: 50%;
+  font-size: 1.4em;
+  text-align: center;  
+}
+
+
+
+/* kontakt mig */
+#contact
+{
+  background-color:rgba(35, 29, 29, 0.877);
+}
+
+.contact-title
+{
+  margin-left: 45%;
+  margin-top: 5%;
+  font-size: 60px;
+  color: cornflowerblue;
+}
+
+.contact-box
+{
+  width: 600px;
+  border-radius: 25px;
+  margin-top: 5%;
+  padding: 20px 60px;
+  margin-left: 34%;
+  display: inline-block;
+  transition: .2s;
+  color: whitesmoke;
+  background-color: rgba(13, 13, 13, 0.586);
+}
+
+.contact-text
+{
+  clear: right;
+  margin-top: 5%;
+  font-size: 30px;
+
+}
+
+.contact-img
+{
+  float: left;
+  text-align: left;
+  margin-right: 20px;
+  width: 120px;
+}
+
+.contact-box:hover
+{
+  transform: scale(1.2); 
+}
+
+
+
+.footer
+{
+  height: 200px;
+  background-color: rgb(35, 29, 29);
+}
+
+
+
+
+
+
+
+
+
+
+
+

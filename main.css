@@ -1,65 +1,80 @@
-* {
+*
+{
   padding: 0;
   margin: 0;
-  
 }
 
-html {
- 
+html
+{
   font-size: 20px;
   font-family: Montserrat, sans-serif;
 }
-a {
+
+a
+{
   text-decoration: none;
 }
 
-
 /* PAGES */
-#home,#slideshow,#about-me,#contact
+#home,#about-me,#contact
 {
   min-height: 1000px;
-  overflow: hidden;
 }
+
 
 
 /* HOME */
-
 #home
 {
   background-image: url(/imgs/pexels-jessica-lewis-creative-583848.jpg);
-  background-repeat: no-repeat;
+  position: relative;
   background-size: 100% 1000px;
+  min-height: 1000px;
+  max-width: 100%;
+  overflow: hidden;
   z-index: 1;
+
 }
 
-#home::after { /* BLACK COVER */
-  content: "";
+/* BLACK COVER */
+
+#home::after 
+{
+  content: '';
   position: absolute;
-  left: 0;
   top: 0;
-  height: 1000px;
+  height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.6;
   z-index: -1;
 }
 
-/*min overskrift på home siden*/
-#home .home-title {
+/* HOLDER ALT MIN TEXT/CONTENT PÅ MIN HOME PAGE*/
+.box-holder
+{
   border: 2px solid aqua;
   display: block;
-  text-align: center;
-  
-  font-size: 2rem;
+  margin-left: auto;
+  margin-right:auto;
+  max-width: 490px;
+  margin-top: 400px;  
+}
+
+
+/*min overskrift på home siden*/
+.text-home
+{
+  border: 2px solid aqua;
+  display: block;
+  font-size: 25px;
   color: whitesmoke;
-  margin-top: 18%;
 }
 
 /*knappen på home siden*/
 #home button {
-  margin-left: 40%;
-  
-  display: inline-block;
+  min-width: 490px;
+  display: block;
   padding: 10px 30px;
   color: cornflowerblue;
   background-color: transparent;
@@ -80,66 +95,20 @@ a {
 
 
 
-.navigationbar
-{
-  padding: 10px;
-  width: 100%;
-  background-color:transparent;
-  top: 0;
-  text-align: center;
-  position: fixed;
-  z-index: 1;
-  scroll-behavior: smooth;
-}
-
-.navigationbar a
-{
-  color: cornflowerblue;
-  text-align: center;
-  padding: 15px 15px;
-  font-size: 25px;
-}
-
-.navigationbar a:hover
-{
-  text-decoration: underline;
-}
-
-
-
-/*projekt slideshow
-#slideshow
-{
-
-}
-#slideshow div h1
-{
-
-}
-#slideshow div h2
-{
-
-}
-
-#slideshow div a img
-{
-  display: block;
-  margin-top: 20%;
-  margin-right: auto;
-  margin-left: auto;
-}
-*/
-
-/* ABOUT ME */
+/* ABOUT ME PAGE */
 #about-me 
 {
   background-color:rgba(35, 29, 29, 0.877);
 }
-.about-me-img
+
+.img-about-me
 {
   float: left;
-  max-width: 50%;
+  background-size: 1000px;
+  min-width: 50%;
+  max-height: 1000px;
 }
+
 .about-me-text
 {
   max-width: 50%;
@@ -147,8 +116,9 @@ a {
   text-align: center;
 }
 
+
 /* Text Styles */
-.about-me-Title
+.title-about-me
 {
   color:cornflowerblue;
   height: 300px;
@@ -168,61 +138,8 @@ a {
 
 
 
-/* kontakt mig */
-#contact
-{
-  background-color:rgba(35, 29, 29, 0.877);
-}
-
-.contact-title
-{
-  margin-left: 45%;
-  margin-top: 5%;
-  font-size: 60px;
-  color: cornflowerblue;
-}
-
-.contact-box
-{
-  width: 600px;
-  border-radius: 25px;
-  margin-top: 5%;
-  padding: 20px 60px;
-  margin-left: 34%;
-  display: inline-block;
-  transition: .2s;
-  color: whitesmoke;
-  background-color: rgba(13, 13, 13, 0.586);
-}
-
-.contact-text
-{
-  clear: right;
-  margin-top: 5%;
-  font-size: 30px;
-
-}
-
-.contact-img
-{
-  float: left;
-  text-align: left;
-  margin-right: 20px;
-  width: 120px;
-}
-
-.contact-box:hover
-{
-  transform: scale(1.2); 
-}
 
 
-
-.footer
-{
-  height: 200px;
-  background-color: rgb(35, 29, 29);
-}
 
 
 

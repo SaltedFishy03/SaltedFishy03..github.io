@@ -1,73 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-
-    <link rel="stylesheet" href="main.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="fullpage.min.css" />
+<html lang="en" <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio</title>
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
 </head>
 
 <body>
 
+    <!-- NAVIGATIONBAR 
     <div class="navigationbar">
-        <a href="#home" style="font-weight:bold">Hjem</a>
-        <a href="#slideshow" style="font-weight:bold">Projekter</a>
-        <a href="#about-me" style="font-weight:bold">Om mig</a>
-        <a href="#contact" style="font-weight:bold">Kontakt mig</a>
-    </div>
+        <a href="home">Hjem</a>
+        <a href="projekts">Projekter</a>
+        <a href="about-me">Om mig</a>
+        <a href="contact">Kontakt mig</a>
+    </div> -->
 
-    <div id="fullpage">
-        
-        
-        <div class="section" id="home">
-            <h1 class="home-title">
-                 Hej<br />
-                 Mit navn er<br />
-                 Mathias Schaltz Hansen
-            </h1>
-            <a href="/aboutme.html">
-                 <button>portfolio</button>
-            </a>
-        </div>
-
-
-        <div class="section" id="slideshow">
-            <div class="slide">
-                <h1>ConCalc</h1>
-                <h2></h2>
-                <a href="https://github.com/SaltedFishy03/ConCalc">
-                    <img src="imgs/concalc.png">
-                </a>
+    <!--HOME PAGE-->
+    <section id="home">
+        <div class="box-holder">
+            <div class="text-home">
+                <h1>
+                    Hej<br />
+                    Mit navn er<br />
+                    Mathias Schaltz Hansen
+                </h1>
             </div>
-
-            <div class="slide">
-                <h1></h1>
-                <h2></h2>
-                <a href="github.com/SaltedFishy03/Difference-mellem-2-tal.git">
-                    <img src="imgs/difference-taeller.png">
-                </a>
-            </div>
-
-            <div class="slide">
-                <h1></h1>
-                <h2></h2>
-                <a href="github.com/SaltedFishy03/lige-eller-ulige-tal-.git"> <img
-                        src="imgs/er-tal-lige-eller-ulige.png" alt="">
+            <div class="button-home">
+                <a href="/aboutme.html">
+                    <button>Projekter</button>
                 </a>
             </div>
         </div>
+    </section>
 
 
-        <div class="section" id="about-me">
-            <div class="grid-container">
-                <img class="about-me-img" src="/imgs/about-me.jpg">
-                <div class="about-me-text">
-                    <h1 class="about-me-Title">Om mig</h1>
-                    <p class="standard-text">
+
+    <!--ABOUT ME PAGE-->
+    <section id="about-me">
+        <div class=" grid-container">
+            <img class="img-about-me" src="/imgs/about-me.jpg">
+            <div class="text-about-me">
+                <div class="title-about-me">
+                    <h1>Om mig</h1>
+                </div>
+                <div class="standard-text">
+                    <p>
                         Mit navn er Matihas Schaltz Hansen. En paasioneret ung fyr
                         som nemt for blod på tanden efter ny læring.
                         <br><br>
@@ -78,48 +57,10 @@
                         Lige nu arbejder jeg med HTML og CSS, hvor senere
                         vil jeg også gerne arbejde med C# samt Python.
                     </p>
-
                 </div>
             </div>
         </div>
+    </section>
 
 
-        <div class="section" id="contact">
-            <ul class="contact-list">
-                <h1 class="contact-title">Kontakt</h1>
-                <li>
-                    <a class="contact-box"
-                        href="https://mail.google.com/mail/?view=cm&fs=1&to=seekerbrutus@gmail.com&body=Contacted Through Website"
-                        target="_blank">
-                        <img class="contact-img" src="imgs/mail-99218_960_720.png">
-                        <p class="contact-text">Du kan kontakte mig på min mail</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="contact-box" href="https://github.com/SaltedFishy03" target="_blank">
-                        <img class="contact-img" src="imgs/github-6980894__340-removebg-preview (2).png">
-                        <p class="contact-text">Check min profil ud på Github</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="contact-box" href="https://www.linkedin.com/in/mathias-hansen-564172249/" target="_blank">
-                        <img class="contact-img" src="imgs/LinkedIn_logo_initials-removebg-preview.png">
-                        <p class="contact-text">Se mere om mig på LinkedIn</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <footer class="footer">
-
-        </footer>
-        <script type="text/javascript" src="fullpage.min.js"></script>
-
-        <script type="text/javascript">
-	        var myFullpage = new fullpage('#fullpage', {});
-            
-        </script>
-    </div>
 </body>
-
-</html>
