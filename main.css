@@ -8,7 +8,8 @@ html
 {
   font-size: 20px;
   font-family: Montserrat, sans-serif;
-}
+  scroll-behavior: smooth;
+} 
 
 a
 {
@@ -21,6 +22,31 @@ a
   min-height: 1000px;
 }
 
+
+/* NAVIGATIONBAR */
+.navigationbar
+{
+  padding: 10px;
+  width: 100%;
+  background-color:transparent;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.navigationbar a
+{
+  color: cornflowerblue;
+  text-align: center;
+  padding: 15px 15px;
+  font-size: 25px;
+}
+
+.navigationbar a:hover
+{
+  text-decoration: underline;
+}
 
 
 /* HOME */
@@ -53,7 +79,6 @@ a
 /* HOLDER ALT MIN TEXT/CONTENT PÅ MIN HOME PAGE*/
 .box-holder
 {
-  border: 2px solid aqua;
   display: block;
   margin-left: auto;
   margin-right:auto;
@@ -65,9 +90,8 @@ a
 /*min overskrift på home siden*/
 .text-home
 {
-  border: 2px solid aqua;
   display: block;
-  font-size: 25px;
+  font-size: 26px;
   color: whitesmoke;
 }
 
@@ -109,7 +133,7 @@ a
   max-height: 1000px;
 }
 
-.about-me-text
+.text-about-me
 {
   max-width: 50%;
   margin-left: 50%;
@@ -121,7 +145,7 @@ a
 .title-about-me
 {
   color:cornflowerblue;
-  height: 300px;
+  height: 100px;
   padding-top: 220px;
   margin-bottom: 20px;
   font-size: 40px;
@@ -140,6 +164,52 @@ a
 
 
 
+/* CONTACT ME PAGE */
+#contact
+{
+  background-color:rgba(35, 29, 29, 0.877);
+}
+
+.contact-title
+{
+  margin-left: 45%;
+  padding-top: 80px;
+  font-size: 60px;
+  color: cornflowerblue;
+}
+
+.contact-box
+{
+  width: 600px;
+  border-radius: 25px;
+  margin-top: 5%;
+  padding: 20px 60px;
+  margin-left: 33%;
+  display: inline-block;
+  transition: .2s;
+  color: whitesmoke;
+  background-color: rgba(13, 13, 13, 0.586);
+}
+
+.contact-box:hover
+{
+  transform: scale(1.2); 
+}
+
+.contact-text
+{
+  clear: right;
+  margin-top: 5%;
+  font-size: 30px;
+}
+
+.contact-img
+{
+  float: left;
+  text-align: left;
+  margin-right: 20px;
+  width: 120px;
+}
 
 
 

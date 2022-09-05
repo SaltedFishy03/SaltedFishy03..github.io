@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" <head>
+<html lang="en">
+
+<head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Portfolio</title>
@@ -9,13 +11,13 @@
 
 <body>
 
-    <!-- NAVIGATIONBAR 
+    <!-- NAVIGATIONBAR -->
     <div class="navigationbar">
-        <a href="home">Hjem</a>
-        <a href="projekts">Projekter</a>
-        <a href="about-me">Om mig</a>
-        <a href="contact">Kontakt mig</a>
-    </div> -->
+        <a href="#home">Hjem</a>
+        <a href="/projekter.html">Projekter</a>
+        <a href="#about-me">Om mig</a>
+        <a href="#contact">Kontakt mig</a>
+    </div>
 
     <!--HOME PAGE-->
     <section id="home">
@@ -28,7 +30,7 @@
                 </h1>
             </div>
             <div class="button-home">
-                <a href="/aboutme.html">
+                <a href="/projekter.html">
                     <button>Projekter</button>
                 </a>
             </div>
@@ -40,27 +42,55 @@
     <!--ABOUT ME PAGE-->
     <section id="about-me">
         <div class=" grid-container">
-            <img class="img-about-me" src="/imgs/about-me.jpg">
+                <img class="img-about-me" src="/imgs/about-me.jpg">  
             <div class="text-about-me">
                 <div class="title-about-me">
-                    <h1>Om mig</h1>
+                <h1>Om mig</h1>
                 </div>
-                <div class="standard-text">
-                    <p>
-                        Mit navn er Matihas Schaltz Hansen. En paasioneret ung fyr
-                        som nemt for blod på tanden efter ny læring.
-                        <br><br>
-                        Jeg brander for
-                        at udvilke mine kompatancer inde for programmering samt få
-                        en breder forståelse inde for faget.
-                        <br><br>
-                        Lige nu arbejder jeg med HTML og CSS, hvor senere
-                        vil jeg også gerne arbejde med C# samt Python.
-                    </p>
+               <div class="standard-text">
+                <p>
+                    Mit navn er Matihas Schaltz Hansen. En paasioneret ung fyr
+                    som nemt for blod på tanden efter ny læring.
+                    <br><br>
+                    Jeg brander for
+                    at udvilke mine kompatancer inde for programmering samt få
+                    en breder forståelse inde for faget.
+                    <br><br>
+                    Lige nu arbejder jeg med HTML og CSS, hvor senere
+                    vil jeg også gerne arbejde med C# samt Python.
+                </p>
                 </div>
             </div>
         </div>
     </section>
 
 
+
+    <!--CONTACT ME PAGE-->
+    <section id="contact">
+        <ul class="contact-list">
+            <h1 class="contact-title">Kontakt</h1>
+            <li>
+                <a class="contact-box"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=seekerbrutus@gmail.com&body=Contacted Through Website"
+                    target="_blank">
+                    <img class="contact-img" src="imgs/mail-99218_960_720.png">
+                    <p class="contact-text">Du kan kontakte mig på min mail</p>
+                </a>
+            </li>
+            <li>
+                <a class="contact-box" href="https://github.com/SaltedFishy03" target="_blank">
+                    <img class="contact-img" src="imgs/github-6980894__340-removebg-preview (2).png">
+                    <p class="contact-text">Check min profil ud på Github</p>
+                </a>
+            </li>
+            <li>
+                <a class="contact-box" href="https://www.linkedin.com/in/mathias-hansen-564172249/" target="_blank">
+                    <img class="contact-img" src="imgs/LinkedIn_logo_initials-removebg-preview.png">
+                    <p class="contact-text">Se mere om mig på LinkedIn</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+  
 </body>
