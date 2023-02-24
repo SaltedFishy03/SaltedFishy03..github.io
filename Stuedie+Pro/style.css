@@ -1,0 +1,79 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+html
+{
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
+} 
+
+body
+{
+  background-color: #20232b;
+}
+
+.Navigationbar
+{
+  padding: 10px;
+  width: 100%;
+  background-color:transparent;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  z-index: 2;
+
+}
+
+.Navigationbar a
+{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 15px;
+  font-size: 25px;
+  
+}
+
+.Navigationbar a:hover
+{
+  text-decoration: underline;
+}
+
+.MessageBox
+{
+  float: right;
+  margin-left: 18%;
+  margin-top: 5%;
+  background-color: #1d1e24;
+  min-width: 70%;
+  min-height: 900px;
+  border-top-left-radius: 20px ; 
+  border-top-right-radius: 20px ; 
+  
+}
+
+.InputBox input
+{
+  margin-top: 830px;
+  background-color: #16171b;
+  width: 98%;
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+}
+
+
+.InputBox2 input
+{
+
+  float: left;
+  background-color: #16171b;
+  width: 400px;
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+}
